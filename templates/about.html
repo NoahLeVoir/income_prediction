@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/static/css/bells.jpg">
+  <title>Income Prediction with Machine Learning</title>
+
+  <!-- Bootstrap https://bootswatch.com/yeti/ -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="/" class="pull-left"><img id="logo" src="/static/css/bells.jpg"></a>
+    <a class="navbar-brand" href="/">Can Machine Learning Predict Income Levels?</a>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Income Prediction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD -->
+  <div class="container">
+
+    <!-- INTERACTIVE FILTER -->
+    <!-- Maybe Change to inputs for user -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <h5>User Enter</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel">
+          <div class="panel__heading">
+            <h3 class="panel__title"><br>Selected User Stats</h3>
+          </div>
+          <!-- May need to update userStats ID name -->
+          <div id="??UserStats??" class="panel__content"></div>
+        </div>
+      </div>
+
+    <!-- end container -->
+  </div>
+
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>UMN DVA Project 3<br>Team 3</p>
+  </div>
+
+<!-- Might Need D3 for event handler -->
+  <!-- d3 JS -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</body>
+
+</html>
