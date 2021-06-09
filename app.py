@@ -1,6 +1,8 @@
-# Import the functions we need from flask
-from flask import Flask
-from flask import render_template 
+# Import libraries
+import numpy as np
+from flask import Flask, request, jsonify, render_template
+import joblib
+from pickle import load
 
 
 # Placeholder code incase we use a db
@@ -15,23 +17,29 @@ from flask import render_template
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Effectively disables page caching
 
+#load scalers here
+
+
+
+
 ### Define app routes ###
 # Index
 @app.route("/")
-# @app.route("/index.html")
-def IndexRoute():
+def home():
     webpage = render_template("index.html")
     return webpage
 
 @app.route("/about")
-def ChartRoute():
-    webpage = render_template("about.html", title_we_want="About")
+def aboutTeam():
+    webpage = render_template("about.html")
     return webpage
 
-# Other Routes??
-# Placeholder for other routes if we want them
-@app.route("/???")
-def OtherRoutes():
+# route that takes user input and makes a predictions
+@app.route("/predict", medthods=['POST'])
+def predictor():
+
+    webpage = render_template("mlmodel.html" )
+    return webpage
 
 
 
