@@ -20,30 +20,35 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Effectively disables page caching
 #load scalers here
 
 
-
-
 ### Define app routes ###
-# Index
+#main/home page this will have our ml model analysis
 @app.route("/")
 def home():
     webpage = render_template("index.html")
     return webpage
 
+#this rought explains where and what dataset we are using for our ml models
 @app.route("/about")
-def aboutTeam():
+def projectOverview():
     webpage = render_template("about.html")
     return webpage
 
+# We might have to move away from making any predcitons 
+# might delete this route
 # route that takes user input and makes a predictions
-@app.route("/predict", medthods=['POST'])
+@app.route("/predict")
 def predictor():
 
-    webpage = render_template("mlmodel.html" )
+    webpage = render_template("predictions_model.html" )
+    return webpage
+
+#this rought has the about team info
+@app.route("/team")
+def aboutTeam():
+    webpage = render_template("about_us.html")
     return webpage
 
 
-
-# This statement is required
-# Final lines for Flask to run properly
+#  flask requirment to run properly
 if __name__ == '__main__':
     app.run(debug=True)
