@@ -13,6 +13,34 @@
     margin-right: 10px;
 }
 
+/* Team Member Class */
+.team-member {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  margin: 0 auto;
+}
+
+.team-member h4 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  shape-margin: 25px;
+}
+
+/* Picture resize, not working!!! */
 #thumbnail {
   width: 100px;
   height: 50px;
@@ -61,7 +89,6 @@
   padding-bottom: 20px;
   background-color: rgba(236, 206, 37, 0.493);
   background-blend-mode: saturation;
-}
 }
 
 #selDataset {
