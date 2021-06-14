@@ -47,7 +47,7 @@
     <!-- Header -->
     <!-- <div class="row"> -->
       <div class="col-md-12">
-        <div class="">
+        <div class="text-center">
           <h1>About The Project</h1>
         </div>
       <!-- </div> -->
@@ -56,28 +56,30 @@
     <!-- Opening Explanation -->
     <div class="row">
       <div class="col-md-6 col-sm-12">
-          <p>Our group will look at Census Income Data courtesy of <a href="https://archive.ics.uci.edu/ml/datasets/Census+Income">UCI's Machine Learning Repository</a>. Through roughly 15 input factors, we would like to train a machine learning model to be able to accurately predict whether a person's income is greater than, or lower than $50K.</p>
-          <p>Per the project requirements we will be using a number of different topics that we discussed in class. We will use scikit-learn as well as python, html/css/bootstrap, and javascript. We will additionally have to do a small amount of cleanup to our dataset in a jupyter notebook. We will create a new “cleaned csv” for analysis in this same notebook.</p>
+        <h3>Project Overview and Goals</h3>
+          <p>The goal of this project is to assess four different machine learning models to determine which one is the most accurate. Our team has chosen to carry out this assesment on Census Income Data courtesy of <a href="https://archive.ics.uci.edu/ml/datasets/Census+Income">UCI's Machine Learning Repository</a>. This dataset contains 15 input factors that can be used to indicate whether ones' income level is above or below $50,000. By training each model on this dataset, our team is able to determine which model can most accurately predict the income level, and which is ready to perform on new data.</p>
+          <p>To accomplish this project, and to be in-line with certain requirements, our team brought together a number of different coding languages, strategies, and libraries. We facilitated <i>Scikit-Learn</i> as well as <i>Python</i> in a <i>Jupyter Notebook</i> to perform a small amount of cleanup on the dataset and to run our Machine Learning Models. In addition to that, our team built out this webpage for our project using <i>HTML/CSS/Bootstrap</i> and hosted it using a <i>Flask Server</i> on <i>Heroku</i>.</p>
       </div>
           <!-- Image -->
       <div class="col-md-6 col-sm-12 color-row">
         <div class="text-center">
           <img src="/static/css/Images/UCI_logo.gif" class="img-responsive" alt="">
         </div>
-        <!-- <a href="#"><img src="/static/css/Images/UCI_logo.gif"></a> -->
         <!-- <a href="#"><img src="/static/css/UCI_Data_Description.png"></a> -->
       </div>
       
       <!-- Remaining Projext Explanation -->
       <div class="col-md-6 col-sm-12 color-row">
-          <p>To accomplish this, we will test a number of different machine learning models. Those models are as follows:</p>
+          <p>After some deliberation and research, our team selected the following four machine learning models to focus on for this project:</p>
           <ul>
             <li>Logistic Regression</li>
             <li>K Nearest Neighbors</li>
             <li>Random Forest</li>
             <li>Neural Network</li>
           </ul>
-          <p>In an effort to dive deeper into our data, after looking at each of these models, we will turn our focus to the input factors. We will use a Correlation Matrix to analyze the strengths of the inputs and see if we can determine which ones are having more of an effect on the outcome. This will not affect which model is the best performer, but is an extra path our group wanted to explore for this project as we feel it could lead to more interesting insights about the data that we are working with.</p>
+          <p>These four models were chosen as they are capable of handle a ??????/////</p>
+          <h3>A Deeper Dive into the Data</h3>
+          <p>In an effort to dive deeper into our data, after looking at each of these models, our team turned our focus to the input factors of our dataset. We sought to analyze the strengths of the inputs to determine which, if any, were having a more significant impact on the outcomes of our models. We understand that these findings would not affect which model is the best performer, but chose this additional analysis on our dataset as we felt it would lead to a deeper understanding of our data, our models, and our project as a whole.</p>
       </div>
 
       <!-- Image -->
@@ -91,9 +93,12 @@
 
       <!-- Finish Project Explanation full page -->
       <div class="col-md-12">
-          <p>Our process and analysis of which model performed best and why will be documented on a webpage. Here we plan to give a project overview, as well as detailed descriptions of how and why certain models and parameters were chosen, and how they affect the overall accuracy of the learning models. This will allow us to select our chosen model.</p>
-          <p>In addition to our analysis, we would like to create a webpage that will allow users to interact with the model that we find to be the most accurate so that they can enter in any input factors they like and get a prediction live from our model. To do this we will be using a flask server and hosting our website on Heroku. We will have to pickle our model and preprocessing functions. We are interested in pursuing this addition as it will allow us to not only develop a machine learning model, but to prove its applicability in creating a live demo of our work that anyone can participate in!</p>
-      </div>
+        <h3>Presenting the Project</h3>
+          <p>To display our project and our findings, the team has elected to design a webpage and host it using Heroku's services. We desire for our work to be easily accessible and therefore made this decision to host on a public space that is accessible to anyone who has the link to the webpage. The vision for this webpage is a one-stop-shop where anyone can come along, read about the project, read the analysis of each model, try out our best performing model with our interactive demo, and even connect with the team behind it all.</p>
+        <h3>An Interactive Model</h3>
+          <p>One of the most exciting parts of this project is coming out of it with an interactive demo that anyone can try. If you want to interact with the model that we found to be the best predictor of our dataset follow the link below or click on the <i>Income Predictor</i> tab at the top of the page. There you can add in your own values for some of the input factors and see if our model can accurately predict if income is above or below $50,000!!</p>
+          <a href="http://127.0.0.1:5500/templates/predictions_model.html">Try Out Our Best Performing Model in this Interactive Activity!</a>
+        </div>
 
     <!-- End Row -->
     </div>
