@@ -43,6 +43,19 @@ body, html {
   color: white;
 }
 
+/* HTML Table */
+table, th, td {
+  margin-top: 25px;
+  padding: 5px;
+  border: 1.5px solid black;
+  border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+
 /* Team Member Class */
 .team-member {
   margin-bottom: 20px;
