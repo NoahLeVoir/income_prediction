@@ -21,21 +21,21 @@
   <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a href="#" class="pull-left"><img id="logo" src="/static/css//Images/dollar_sign.png"></a>
-    <a class="navbar-brand" href="index.html">Can Machine Learning Predict Income Levels?</a>
+    <a class="navbar-brand" href="/">Can Machine Learning Predict Income Levels?</a>
 
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Model Analysis</a>
+          <a class="nav-link" href="/">Model Analysis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">Project Overview</a>
+          <a class="nav-link" href="/about">Project Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="predictions_model.html">Income Predictor</a>
+          <a class="nav-link active" href="/predictor">Income Predictor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about_us.html">About Us</a>
+          <a class="nav-link" href="/team">About Us</a>
         </li>
       </ul>
     </div>
@@ -60,35 +60,7 @@
     </div>
 
 
-    <!-- YONIS CODE -->
-    
-    <div class = "ML_inputs">
-      <h1> Income Predictor</h1>
-        <h3> Enter the following values to predict the if income will be over or under $50k</h3>
-    
-        <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
-        <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
-        <form action ="{{url_for('predict')}}"method= "post">
-          <!-- We are using Jinja if statement to fill the previous values from the Flask server if data has been entered -->
-          <input type ="text" name = "sepal_length"  placeholder = "Sepal Length" required = "required" {% if features %} value = {{features[0]}} {% endif %} />
-          <input type ="text" name = "sepal_width"  placeholder = "Sepal Width" required = "required" {% if features %} value = {{features[1]}} {% endif %} />
-          <input type ="text" name = "petal_length"  placeholder = "Petal Length" required = "required" {% if features %} value = {{features[2]}} {% endif %} />
-          <input type ="text" name = "petal_width"  placeholder = "Petal Width" required = "required" {% if features %} value = {{features[3]}} {% endif %} />
-    
-          <button type ="submit" class ="btn"> Predict</button>
-        </form>
-    
-        <br>
-        <br>
-        {{ prediction_text }}
-    </div>
-    
-    <!-- END YONIS CODE -->
-    
-    <!-- end container -->
   </div>
-
-  
 
   <!-- Footer-->
   <div id="footer">

@@ -36,9 +36,8 @@ def projectOverview():
 # We might have to move away from making any predcitons 
 # might delete this route
 # route that takes user input and makes a predictions
-@app.route("/predict")
+@app.route("/predictor")
 def predictor():
-
     webpage = render_template("predictions_model.html" )
     return webpage
 
