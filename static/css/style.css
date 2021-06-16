@@ -18,10 +18,40 @@ body, html {
   height: 100%;
 }
 
-/* The hero image */
-.hero-image {
+/* The hero image Machine Learning Page */
+.hero-image-ML {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/css/Images/ML_Networks.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/static/css/Images/ML-Moving.gif");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* The hero image Project Overview Page */
+.hero-image-PO {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/css/Images/teamwork.gif");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* The hero image Project Overview Page */
+.hero-image-INCOME {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/css/Images/cashcash.gif");
 
   /* Set a specific height */
   height: 50%;
@@ -43,7 +73,7 @@ body, html {
   color: white;
 }
 
-/* HTML Table */
+/* HTML Data Tables */
 table, th, td {
   margin-top: 25px;
   padding: 5px;
@@ -91,35 +121,6 @@ th {
   object-fit: fill;
 }
 
-/* User Select Info Panel */
-:root {
-  /* --panel-color: rgba(0, 0, 0, 0.135); */
-  --panel-border-width: 5px;
-  --panel-border-height: 5px;
-  --panel-padding: 20px;
-}
-
-.panel {
-  background: var(--panel-color);
-  border-radius: var(--panel-border-width);
-  padding: var(--panel-border-width);
-  padding-top: var(--panel-border-height);
-}
-
-.panel__header, 
-.panel__content {
-  padding: var(--panel-padding);
-}
-
-.panel__title {
-  line-height: 1;
-}
-
-.panel__content {
-  background:  rgb(207, 34, 193);;
-}
-/*  */
-
 .row {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -130,7 +131,7 @@ th {
 .color-row {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgba(236, 206, 37, 0.493);
+  background-color: rgba(148, 144, 121, 0.493);
   background-blend-mode: saturation;
 }
 
