@@ -36,8 +36,27 @@ def projectOverview():
 # We might have to move away from making any predcitons 
 # might delete this route
 # route that takes user input and makes a predictions
-@app.route("/predictor")
+@app.route("/predictor") #,methods=['POST']
 def predictor():
+
+    #  # Create a list of the output labels.
+    # prediction_labels = [">=50","<=50"]
+
+    #  # Read the list of user-entered values from the website. Note that these
+    # # will be strings. 
+    # features = [x for x in request.form.values()]
+
+    #  # Convert each value to a float.
+    # float_features = [float(x) for x in features]
+
+    #  # in class.)
+    # final_features = [np.array(float_features)]
+
+    # final_features_scaled = scaler.transform(final_features)
+    
+    
+    
+    
     webpage = render_template("predictions_model.html" )
     return webpage
 
