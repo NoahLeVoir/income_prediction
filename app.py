@@ -49,9 +49,7 @@ def predictor():
 
     #these values are from random_forest_ml.ipynb > input_14260,30339,8610 
     prediction1 = [[27,160178,10,0,0,38,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]]
-
     prediction2 = [[50,175804,13,0,0,40,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]]
-
     prediction3 = [[24,322931,4,0,1902,40,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]]
 
     #scaled values
@@ -60,17 +58,17 @@ def predictor():
     prediction3_scaled = scaler.transform(prediction3)
     
     # need to connect to my buttons for this to work???
-    predict = randomforest.predict(prediction1_scaled)
+    predict1 = randomforest.predict(prediction1_scaled)
     print(f'Your income predction is {prediction_labels[predict[0]]}')
 
-    predict = randomforest.predict(prediction2_scaled)
-    print(f'Your income predction is {prediction_labels[predict[0]]}')
+    # predict2 = randomforest.predict(prediction2_scaled)
+    # print(f'Your income predction is {prediction_labels[predict[0]]}')
 
-    predict = randomforest.predict(prediction3_scaled)
-    print(f'Your income predction is {prediction_labels[predict[0]]}')
+    # predict3 = randomforest.predict(prediction3_scaled)
+    # print(f'Your income predction is {prediction_labels[predict[0]]}')
 
     
-    webpage = render_template("predictions_model.html", )
+    webpage = render_template("predictions_model.html",)
     return webpage
 
 #this rought has the about team info
