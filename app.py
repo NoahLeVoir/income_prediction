@@ -57,9 +57,9 @@ def predictor():
     prediction2_scaled = scaler.transform(prediction2)
     prediction3_scaled = scaler.transform(prediction3)
     
-    # need to connect to my buttons for this to work???
-    predict1 = randomforest.predict(prediction1_scaled)
-    print(f'Your income predction is {prediction_labels[predict[0]]}')
+    # # need to connect to my buttons for this to work???
+    # predict1 = randomforest.predict(prediction1_scaled)
+    # print(f'Your income predction is {prediction_labels[predict[0]]}')
 
     # predict2 = randomforest.predict(prediction2_scaled)
     # print(f'Your income predction is {prediction_labels[predict[0]]}')
