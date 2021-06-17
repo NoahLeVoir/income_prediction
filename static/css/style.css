@@ -4,6 +4,8 @@
   margin-right: 10px;
 }
 
+/* Image Adjustments */
+
 .picture-centered {
     width: 20px;
     height:10px;
@@ -12,6 +14,21 @@
     padding-bottom: 20px;
     margin-left: 50px;
     margin-right: 10px;
+}
+
+/* Push to the right */
+.right-adjust {
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* Shrink and Push Up Left */
+.shrink-adjust {
+  size: 80%;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 body, html {
