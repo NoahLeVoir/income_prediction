@@ -25,10 +25,9 @@
 
 /* Shrink and Push Up Left */
 .shrink-adjust {
-  size: 80%;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 5px;
+  width: 1100px;
+  height: 500px;
+  object-fit: scale-down;
 }
 
 /* Bottom Padding */
@@ -71,10 +70,10 @@ body, html {
   position: relative;
 }
 
-/* The hero image Project Overview Page */
+/* The hero image Income Predictor Page */
 .hero-image-INCOME {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/css/Images/cashcash.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/static/css/Images/cashcash.gif");
 
   /* Set a specific height */
   height: 50%;
@@ -169,6 +168,12 @@ nav {
 body {
   background-color: whitesmoke;
   background-blend-mode: overlay;
+}
+
+/* btn color */
+.btn-primary {
+  background-color: green;
+  border: white;
 }
 
 #footer {
