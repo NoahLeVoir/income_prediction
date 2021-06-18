@@ -78,9 +78,11 @@ def magicHappenshere():
 
         
         predict = randomforest.predict(prediction_scaled) 
+        
         our_str = "Our Random Forest Model Predicts the Income to be: \n"
         modle_prediction = prediction_labels[predict[0]]
         index_str = (f' Test data is being pulled from Index: {index_num}')
+
         return (our_str + prediction_labels[predict[0]] + '.') + index_str 
 
 
