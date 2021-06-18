@@ -26,9 +26,15 @@
 /* Shrink and Push Up Left */
 .shrink-adjust {
   size: 80%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 5px;
+}
+
+/* Bottom Padding */
+.space-adjust {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 body, html {
