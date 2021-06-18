@@ -51,7 +51,7 @@ def predictor():
 @app.route("/magic")
 def magicHappenshere():
       #income prediction labels
-    prediction_labels = [">=50","<=50"]
+    prediction_labels = [">$50,000","<=$50,000"]
 
     # Load the model.
     randomforest = load(open('static/data/randomforest.pkl', 'rb'))
