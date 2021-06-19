@@ -194,3 +194,14 @@ body {
   font-size: 12px;
   color: white;
 }
+/* prediction id control*/
+
+#prediction {
+  color: black;
+  font-size: large;
+  background:rgb(6, 152, 6);
+  border-style: inset;
+  background-blend-mode: darken;
+  border-color: honeydew;
+ 
+}

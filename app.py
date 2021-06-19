@@ -87,7 +87,8 @@ def magicHappenshere():
         # final_prediction = (f'{our_str}\n{index_str}')
 
         # return (f'{our_str}\n{index_str}')
-        return (our_str + prediction_labels[predict[0]] + '.') + index_str 
+        return (our_str + prediction_labels[predict[0]] + '.') +  index_str
+
 
 #this rought has the about team info
 @app.route("/team")
